@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <h2>A counter with click events</h2>
+        <h2 id="counter">0</h2>
+        <button id="increase">Increase</button>
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+    </div>
+    <br>
+
+    <div>
+        <h2>Live text preview</h2>
+        <label for="textInput">Enter your text:</label>
+        <input type="text" id="textInput" placeholder="Yout text">
+        <p id="preview">Your text will appear here</p>
+        <label for="charCounter">Character counter</label>
+        <h2 id="charCounter">0</h2>
+        <button id="clear">Clear</button>
+    </div>
+    <br>
+
+    <div>
+        <h2>Change an image with a select control </h2>
+        <label for="imageSelect">Select your favourite from Big 3</label>
+        <select id="imageSelect">
+            <option value="naruto">Naruto</option>
+            <option value="bleach">Bleach</option>
+            <option value="onePiece">One Piece</option>
+        </select><br>
+        
+        <img id="animeImage" src="naruto.jpg" alt="Naruto" width="300px" height=auto>
+        <p id="animeParagraph">Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young, socially isolated ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+    </div>
+
+    <div>
+        <h2>Keyboard events</h2>
+        <label for="inputKey">Type and press Enter/Escape:</label>
+        <input type="text" id="inputKey"><br>
+        <label for="statusKey">Status:</label>
+        <p id="statusKey">Key status will appear here</p>
+        <label for="resultKey">Result:</label>
+        <p id="resultKey">Result will appear here</p>
+    </div>
+
+    <div>
+        <h2>Mouse and focus events</h2>
+        <p id="instruction">Focus on the card using Tab key or the Mouse</p>
+        <div id="card" tabindex="0"style="border: 2px solid gray; padding: 20px; width: 250px; cursor: pointer;">
+            <p>You can focus here</p>
+        </div>
+    </div>
+</body>
+</html>
